@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+}
+
+hr {
+  border: 1px solid hsl(275, 100%, 97%);
+}
+
+.main-box {
+  max-height: auto;
+  background-color: white;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0 2rem 1rem 2rem;
+  border-radius: 10px;
+}
+
+.inner-box {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: hsl(292, 42%, 14%);
+}
+
+.inner-box1 {
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0;
+}
+
+.inner-box1 h1 {
+  font-size: 35px;
+  margin-top: 1.8rem;
+}
+
+.inner-box1 img {
+  width: 35px;
+}
+
+.inner-box1 .icon {
+  margin-top: 2rem;
+}
+
+.inner-box-icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.inner-box3 .inner-box-icon {
+  justify-content: space-between;
+}
+
+.inner-box3 .icon {
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+h3:hover {
+  color: hsl(293, 54%, 55%);
+}
+
+p {
+  display: block;
+  line-height: 1.5;
+  font-size: 13px;
+  font-weight: 500;
+  width: 27rem;
+  margin-top: 1rem;
+  color: #8c6991;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon-push {
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+  }
+
+  p {
+    width: 16rem;
+  }
+}
